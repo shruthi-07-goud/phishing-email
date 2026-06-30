@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phishing Email Detection & Awareness System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+🛡️ Phishing Detector
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#analyzer">Analyzer</a></li>
+
+<li><a href="#tips">Awareness</a></li>
+
+<li><a href="#about">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<h1>
+<i class="fa-solid fa-shield-halved"></i>
+
+Phishing Email Detection & Awareness System
+
+</h1>
+
+<p>
+
+Analyze emails and detect phishing attacks using common cybersecurity indicators.
+
+</p>
+
+</div>
+
+</header>
+
+<!-- ANALYZER -->
+
+<div class="container" id="analyzer">
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-envelope"></i>
+
+Paste Email
+
+</h2>
+
+<textarea
+
+id="emailText"
+
+placeholder="Paste your email content here...">
+
+</textarea>
+
+<div class="sample-buttons">
+
+<button onclick="loadSafeEmail()">
+
+📧 Safe Email
+
+</button>
+
+<button onclick="loadSuspiciousEmail()">
+
+⚠️ Suspicious Email
+
+</button>
+
+<button onclick="loadPhishingEmail()">
+
+🚨 Phishing Email
+
+</button>
+
+</div>
+
+<button onclick="analyzeEmail()">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Analyze Email
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-chart-line"></i>
+
+Analysis Result
+
+</h2>
+
+<div id="result">
+
+<h3>
+
+No email analyzed yet.
+
+</h3>
+
+<p>
+
+Paste an email and click Analyze.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- AWARENESS -->
+
+<section class="tips" id="tips">
+
+<h2>
+
+🛡️ Phishing Awareness Tips
+
+</h2>
+
+<div class="tips-grid">
+
+<div class="tip">
+
+<h3>📧 Check Sender</h3>
+
+<p>
+
+Always verify the sender's email address before trusting any email.
+
+</p>
+
+</div>
+
+<div class="tip">
+
+<h3>🔗 Avoid Unknown Links</h3>
+
+<p>
+
+Hover over links before clicking them.
+
+</p>
+
+</div>
+
+<div class="tip">
+
+<h3>🔑 Never Share Passwords</h3>
+
+<p>
+
+Legitimate companies never ask for passwords through email.
+
+</p>
+
+</div>
+
+<div class="tip">
+
+<h3>⚠️ Beware of Urgency</h3>
+
+<p>
+
+Scammers often create panic to trick users.
+
+</p>
+
+</div>
+
+<div class="tip">
+
+<h3>💳 Protect Banking Details</h3>
+
+<p>
+
+Never enter banking information from email links.
+
+</p>
+
+</div>
+
+<div class="tip">
+
+<h3>📎 Check Attachments</h3>
+
+<p>
+
+Avoid opening unexpected ZIP or EXE files.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>
+
+About This Project
+
+</h2>
+
+<p>
+
+The Phishing Email Detection & Awareness System is a simple cybersecurity project developed using HTML, CSS, and JavaScript. It analyzes email content by checking for phishing indicators such as urgent language, suspicious links, password requests, banking keywords, fake domains, and malicious attachments. Based on the analysis, the email is classified as Safe, Suspicious, or Phishing, along with a risk score and security recommendations.
+
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Phishing Email Detection & Awareness System | Developed for Cyber Security Internship
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
