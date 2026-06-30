@@ -39,24 +39,17 @@
         <div class="card">
             <h2>
                 <i class="fa-solid fa-envelope"></i>
-                Input Details
+                Paste Email
             </h2>
-            
-            <div class="input-group">
-                <label for="senderEmail"><strong>Sender Email Address (Optional):</strong></label>
-                <input type="text" id="senderEmail" placeholder="e.g., security@paypal-login-update.com">
-            </div>
-
-            <label for="emailText"><strong>Paste Email Body Content:</strong></label>
             <textarea id="emailText" placeholder="Paste your email content here..."></textarea>
 
             <div class="sample-buttons">
-                <button onclick="loadBankScam()">🚨 Bank Scam</button>
-                <button onclick="loadLotteryWin()">🏆 Lottery Win</button>
-                <button onclick="loadNormalEmail()">📧 Normal Email</button>
+                <button onclick="loadSafeEmail()">📧 Safe Email</button>
+                <button onclick="loadSuspiciousEmail()">⚠️ Suspicious Email</button>
+                <button onclick="loadPhishingEmail()">🚨 Phishing Email</button>
             </div>
 
-            <button onclick="analyzeEmail()" class="btn-primary">
+            <button onclick="analyzeEmail()">
                 <i class="fa-solid fa-magnifying-glass"></i> Analyze Email
             </button>
         </div>
@@ -68,7 +61,7 @@
             </h2>
             <div id="result">
                 <h3>No email analyzed yet.</h3>
-                <p>Fill in the details above and click Analyze.</p>
+                <p>Paste an email and click Analyze.</p>
             </div>
         </div>
     </div>
